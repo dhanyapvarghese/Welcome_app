@@ -36,10 +36,10 @@ on:
 
 env:
   AZURE_CONTAINER_REGISTRY: "testacrforevaluvation"
-  CONTAINER_NAME: "testocoontainer"
+  CONTAINER_NAME: "welcomeapp"
   RESOURCE_GROUP: "test_rg"
   CLUSTER_NAME: "aks_test_evaluvation"
-  DEPLOYMENT_MANIFEST_PATH: "./"
+  DEPLOYMENT_MANIFEST_PATH: "Welcome-app/"
 
 jobs:
   buildImage:
