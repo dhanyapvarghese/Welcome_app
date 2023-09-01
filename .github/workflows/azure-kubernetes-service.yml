@@ -35,11 +35,11 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "your-azure-container-registry"
-  CONTAINER_NAME: "your-container-name"
-  RESOURCE_GROUP: "your-resource-group"
-  CLUSTER_NAME: "your-cluster-name"
-  DEPLOYMENT_MANIFEST_PATH: "your-deployment-manifest-path"
+  AZURE_CONTAINER_REGISTRY: "testacrforevaluvation"
+  CONTAINER_NAME: "testocoontainer"
+  RESOURCE_GROUP: "test_rg"
+  CLUSTER_NAME: "aks_test_evaluvation"
+  DEPLOYMENT_MANIFEST_PATH: "./"
 
 jobs:
   buildImage:
