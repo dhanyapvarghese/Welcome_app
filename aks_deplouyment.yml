@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: welcome-app
-        image: testacrforevaluvation..azurecr.io/welcome-app:tag
+        image: testacrforevaluvation.azurecr.io/welcome-app:tag
         ports:
         - containerPort: 80
 ---
