@@ -1,5 +1,6 @@
-FROM python
-WORKDIR /app
+FROM python:3.6
 COPY . /app
-EXPOSE 80
-CMD ["python","print.py"]
+WORKDIR /app
+RUN pip install -r requirements.txt
+ENTRYPOINT ["python"]
+CMD ["app.py"]
