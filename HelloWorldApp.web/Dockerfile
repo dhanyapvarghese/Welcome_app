@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /app
 
 # Copy the project file to the container
-COPY --from=build *.csproj ./
+#COPY --from=build *.csproj ./
 
 # Restore the dependencies
 RUN dotnet restore
