@@ -5,14 +5,13 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /app
 
 # Copy the project file to the container
-#COPY --from=build *.csproj ./
-
-
-# Copy the remaining files to the container
-COPY . ./
+COPY *.csproj ./
 
 # Restore the dependencies
 RUN dotnet restore
+
+# Copy the remaining files to the container
+COPY . ./
 
 # Build the application
 RUN dotnet publish -c Release -o out
