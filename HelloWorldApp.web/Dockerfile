@@ -20,7 +20,7 @@ RUN dotnet publish ./HelloWorld_Azure_CI-CD.sln -c Release -o /app/out
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /app/out
 
 # Copy the published output from the build image to the runtime image
 COPY --from=build /app/out .
