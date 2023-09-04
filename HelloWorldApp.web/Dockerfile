@@ -14,7 +14,7 @@ RUN dotnet restore
 COPY . ./
 
 # Build the application
-RUN dotnet publish -c Release -o /app/out
+RUN dotnet publish ./HelloWorld_Azure_CI-CD.sln -c Release -o /app/out
 
 # Create a new image for the runtime
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
