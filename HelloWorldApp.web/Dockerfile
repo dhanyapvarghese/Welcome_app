@@ -7,11 +7,12 @@ WORKDIR /app
 # Copy the project file to the container
 #COPY --from=build *.csproj ./
 
-# Restore the dependencies
-RUN dotnet restore
 
 # Copy the remaining files to the container
 COPY . ./
+
+# Restore the dependencies
+RUN dotnet restore
 
 # Build the application
 RUN dotnet publish -c Release -o out
