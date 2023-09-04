@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /app
 
 # Copy the project file to the container
-COPY *.csproj ./
+COPY ./HelloWorldApp.web.csproj ./
 
 # Restore the dependencies
 RUN dotnet restore
