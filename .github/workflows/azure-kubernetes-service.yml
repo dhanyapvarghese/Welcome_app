@@ -105,9 +105,6 @@ jobs:
       - name: Deploys application
         uses: Azure/k8s-deploy@v4
         with:
-          registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-          registry-username: ${{ secrets.REGISTRY_USERNAME }}
-          registry-password: ${{ secrets.REGISTRY_PASSWORD }}
           action: deploy
           namespace: 'ingress-basic'
           manifests: ${{ env.DEPLOYMENT_MANIFEST_PATH }}
