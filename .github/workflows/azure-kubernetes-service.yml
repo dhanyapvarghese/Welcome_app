@@ -40,6 +40,7 @@ env:
   RESOURCE_GROUP: "test_rg"
   CLUSTER_NAME: "aks_test_evaluvation"
   DEPLOYMENT_MANIFEST_PATH: "./aks_deplouyment.yml"
+  IMAGE_TAG: ${{ github.sha }}
 
 jobs:
   buildImage:
@@ -102,6 +103,18 @@ jobs:
           use-kubelogin: 'true'
 
       # Deploys application based on given manifest file
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Get image tag
+        id: get_image_tag
+        run: echo "::set-output name=image_tag::${{ needs.build.outputs.IMAGE_TAG }}"
+
+      - name: Replace image name in deployment.yaml
+        run: |
+          sed -i "s|REPLACE_WITH_IMAGE_NAME:REPLACE_WITH_IMAGE_TAG|${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ steps.get_image_tag.outputs.image_tag }}|" aks_deplouyment.yml
+
       - name: Deploys application
         uses: Azure/k8s-deploy@v4
         with:
@@ -109,4 +122,4 @@ jobs:
           namespace: 'ingress-basic'
           manifests: ${{ env.DEPLOYMENT_MANIFEST_PATH }}
           images: |
-            ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
+            ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ steps.get_image_tag.outputs.image_tag }}
