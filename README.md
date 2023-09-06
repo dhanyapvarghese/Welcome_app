@@ -20,7 +20,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 - Use GitHub Action to create an AKS cluster
 
 ## Prerequisites
-1.Create Storage Account for Terraform State file - When deploying Terraform there is a requirement that it must store a state file; this file is used by Terraform to map Azure Resources to your configuration that you want to deploy, keeps track of meta data and can also assist with improving performance for larger Azure Resource deployments.
+1.Create Storage Account for Terraform State file - When deploying Terraform there is a requirement that it must store a state file; this file is used by Terraform to map Azure Resources to your configuration that you want to deploy, keeps track of meta data and can also assist with improving performance for larger Azure Resource deployments.<br />
 2.Create Azure AD Group for AKS Admins - The Azure AD Group will be used for AKS cluster access
 In this scenario, the Terraform State file will be stored in remote state location of an Azure Storage Account.
 
