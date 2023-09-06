@@ -39,7 +39,7 @@ env:
   CONTAINER_NAME: "welcomeapp"
   RESOURCE_GROUP: "test_rg"
   CLUSTER_NAME: "aks_test_evaluvation"
-  DEPLOYMENT_MANIFEST_PATH: "./deployment.yml"
+  DEPLOYMENT_MANIFEST_PATH: "./deployment.yaml"
 
 jobs:
   buildImage:
