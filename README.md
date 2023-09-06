@@ -74,6 +74,7 @@ The code is checked-out
 - Acr Login
 - Build and push image to ACR
 - Deploys application
-![image](https://github.com/dhanyapvarghese/Welcome_app/assets/43697021/760092c1-9cd0-43bc-a4d6-d4fbc43a73e8)
+![image](https://github.com/dhanyapvarghese/Welcome_app/assets/43697021/5867c300-3007-4fac-b096-c1b21a82e461)
+
 
 
