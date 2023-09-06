@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: uber-ui
+  name: welcome-app
 spec:
   selector:
-    app: uber-ui
+    app: welcome-app
   ports:
   - protocol: "TCP"
     port: 80
