@@ -73,7 +73,7 @@ The code is checked-out
 - Authentication occurs to Azure
 - Acr Login
 - Build and push image to ACR
-kubectl create secret docker-registry acrsecret --docker-server=testacrforevaluvation.azurecr.io --docker-username=testacrforevaluvation --docker-password=aiTXr/xB19HQpkWp9oNlZ5464hR+ivAe5LW7qzT+59+ACRBtm92L
+kubectl create secret docker-registry acrsecret --docker-server=testacrforevaluvation.azurecr.io --docker-username=testacrforevaluvation --docker-password=aiTXr/xB19HQpkWp9oNlZ5464hR+ivAe5LW7qzT+59+ACRBtm92L <br />
 Secret is created to pull the image from the acr
 - Deploys application
 ![image](https://github.com/dhanyapvarghese/Welcome_app/assets/43697021/41b98400-d551-43d6-a152-9af818781413)
