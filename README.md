@@ -2,22 +2,22 @@
 ### Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
 
-1.Azure
-Azure will be used to host the application, cloud infrastructure, and any other services we may need to ensure the welcome app is deployed properly. <br />
-2.GitHub
-To store the application and infrastructure/automation code <br />
-3.Python
-Python will be used for the welcome-app (it is written in Python) and some automation efforts that aren't in Terraform. <br />
-4.Terraform
-Create an Azure ACR repository with Terraform <br />
-Create an AKS cluster
-5.Docker
-Create a Docker image 
-Store the Docker image in Azure ACR <br />
-6.Kubernetes
-To run the Docker image that's created for the containerized welcome app. Kubernetes, in this case, AKS, will be used to orchestrate the container. <br />
-7.CI/CD
-Use GitHub Action to create an AKS cluster
+1.Azure <br />
+- Azure will be used to host the application, cloud infrastructure, and any other services we may need to ensure the welcome app is deployed properly. <br />
+2.GitHub <br />
+- To store the application and infrastructure/automation code <br />
+3.Python <br />
+- Python will be used for the welcome-app (it is written in Python) and some automation efforts that aren't in Terraform. <br />
+4.Terraform <br />
+- Create an Azure ACR repository with Terraform <br />
+- Create an AKS cluster
+5.Docker <br />
+- Create a Docker image <br />
+- Store the Docker image in Azure ACR <br />
+6.Kubernetes <br />
+- To run the Docker image that's created for the containerized welcome app. Kubernetes, in this case, AKS, will be used to orchestrate the container. <br />
+7.CI/CD <br />
+- Use GitHub Action to create an AKS cluster
 
 ## Prerequisites
 1.Create Storage Account for Terraform State file - When deploying Terraform there is a requirement that it must store a state file; this file is used by Terraform to map Azure Resources to your configuration that you want to deploy, keeps track of meta data and can also assist with improving performance for larger Azure Resource deployments.
