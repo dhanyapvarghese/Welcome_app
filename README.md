@@ -77,6 +77,7 @@ kubectl create secret docker-registry acrsecret --docker-server=testacrforevaluv
 Secret is created to pull the image from the acr
 - Deploys application
 ![image](https://github.com/dhanyapvarghese/Welcome_app/assets/43697021/41b98400-d551-43d6-a152-9af818781413)
+![image](https://github.com/dhanyapvarghese/Welcome_app/assets/43697021/40c36d32-f44e-4b56-b2f3-efc510313431)
 
 
 
