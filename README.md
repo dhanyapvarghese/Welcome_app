@@ -3,19 +3,19 @@
 You will be using the following technologies and platforms to set up a DevOps environment.
 
 1.Azure
-Azure will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Uber app is deployed properly.
+Azure will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Uber app is deployed properly. <br />
 2.GitHub
-To store the application and infrastructure/automation code
+To store the application and infrastructure/automation code <br />
 3.Python
-Python will be used for the Uber app (it is written in Python) and some automation efforts that aren't in Terraform.
+Python will be used for the welcome-app (it is written in Python) and some automation efforts that aren't in Terraform. <br />
 4.Terraform
-Create an Azure ACR repository with Terraform
+Create an Azure ACR repository with Terraform <br />
 Create an AKS cluster
 5.Docker
-Create a Docker image
-Store the Docker image in Azure ACR
+Create a Docker image 
+Store the Docker image in Azure ACR <br />
 6.Kubernetes
-To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, AKS, will be used to orchestrate the container.
+To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, AKS, will be used to orchestrate the container. <br />
 7.CI/CD
 Use GitHub Action to create an AKS cluster
 
