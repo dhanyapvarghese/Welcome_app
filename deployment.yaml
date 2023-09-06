@@ -63,4 +63,4 @@ spec:
     name: welcome-app   # Name of the deployment
   minReplicas: 1  # Minimum number of replicas
   maxReplicas: 2  # Maximum number of replicas
-  targetAverageUtilization: 50  # Target CPU utilization percentage
+  targetCPUUtilizationPercentage: 50  # Target CPU utilization percentage
